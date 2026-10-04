@@ -1,1 +1,7 @@
-/* место для вашего кода */
+.header {
+    width: 1100;
+    height: 293;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    align-items: center;
+}
