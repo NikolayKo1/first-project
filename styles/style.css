@@ -1,7 +1,72 @@
 .header {
-    width: 1100;
-    height: 293;
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
+    height: 293px;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
     align-items: center;
+}
+.logofirst {
+    display: block;
+    width: 148px;
+    height: 105px;
+
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    list-style-type: circle;
+}
+
+.nav {
+    white-space: nowrap;
+}
+
+.info .lots {
+    text-decoration: underline;
+}
+.list_non {
+    list-style: none;
+    text-align: end;
+    margin-right: 22px;
+} 
+
+li {
+    padding-right: 0;
+    column-gap: 50px;
+}
+
+.contacts {
+    margin-left: 184px;
+    margin-right: 100px;
+    white-space: initial;
+}
+
+.address {
+    list-style: none;
+    font-style: normal;
+}
+.address_number,.address_email {
+    text-decoration: underline;
+    text-decoration-skip-ink:auto;
+    text-decoration-thickness:1px;
+    text-underline-offset:4px;
+}
+
+.cover {
+    height: 757px;
+    width: 1100px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
