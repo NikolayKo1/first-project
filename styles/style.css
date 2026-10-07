@@ -1,3 +1,4 @@
+
 .header {
     height: 293px;
     display: grid;
@@ -22,8 +23,11 @@
     white-space: nowrap;
 }
 
-.info .lots {
+.info, .lots {
     text-decoration: underline;
+    text-decoration-skip-ink:auto;
+    text-decoration-thickness:1px;
+    text-underline-offset:4px;
 }
 .list_non {
     list-style: none;
@@ -46,27 +50,82 @@ li {
     list-style: none;
     font-style: normal;
 }
-.address_number,.address_email {
+.address_number, .address_email {
     text-decoration: underline;
     text-decoration-skip-ink:auto;
     text-decoration-thickness:1px;
     text-underline-offset:4px;
 }
 
+.main {
+    width: 1100px;
+    height: 757px;
+}
+
 .cover {
     height: 757px;
     width: 1100px;
-    position: relative;
     overflow: hidden;
     
 }
 
-.overlay::after {
-  content: "";
+
+
+.img_container {
+    position: relative;
+    width: 1100px;
+    height: 757px;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+}
+
+.img_lotus {
+    width: 100%;
+    height: 100%;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.title {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 385px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  margin: 0;
+  z-index: 3;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 30%;
+}
+
+.title_ono {
+    text-align: start;
+}
+
+.title_tebe {
+    text-align: center;
+}
+
+.title_nado {
+    text-align: end;
+    transform: translate(20px, 0);
+}
+
+.description {
+    z-index: 3;
+    position: absolute;
+    width: 90%;
+    height: 51px;
+    color: white;
 }

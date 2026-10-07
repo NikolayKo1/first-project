@@ -36,32 +36,37 @@
         </ul>
           </address>
     </header>
+    
     <main class="main">
-      <cover class="cover">
-        <overlay class="overlay">
-          <div>
-          <img  src="images/cover.jpg" alt="цветы, лотусы"></div>
-        
-          <title>
-
-          </title>
-        
-          <description>
-
-          </description>
-        </overlay>
-          
-        
-      </cover>
+  <div class="cover">
+    <!-- Главный контейнер, который задаёт размеры -->
+    <div class="img_container">
       
-      <lots class="lots">
-
-      </lots>
+      <!-- Сама картинка -->
+      <img class="img_lotus" src="images/cover.jpg" alt="цветы, лотусы">
       
-      <about class="about">
+      <!-- Затемнение (лежит поверх картинки) -->
+      <div class="overlay"></div>
+      
+      <!-- Контейнер для текста (тоже поверх картинки) -->
+      <div class="title_conteiner">
+        <div class="title">
+          <p class="title_ono">ОНО</p>
+          <p class="title_tebe">ТЕБЕ</p>
+          <p class="title_nado">НАДО</p>
+        </div>
+      </div>
+      
+      <!-- Описание под заголовком (если нужно) -->
+      <div class="description">
+        <p>Аукцион вещей, в которые никто не верил</p>
+      </div>
+    </div>
+  </div>
 
-      </about>
-    </main>
+  <div class="lots"></div>
+  <div class="about"></div>
+</main>
     <foother></foother>
   </body>
 </html>
